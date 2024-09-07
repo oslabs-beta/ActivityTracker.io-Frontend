@@ -6,8 +6,7 @@
    ```bash
    import clickTracker from 'os-analytics';
    ```
-3. **create a free account on os-analytics.com**
-  3.1 **you will receive an api key**
+3. **create a free account on os-analytics.com in order to receive an api key**
 4. **using click tracker:**
   ```bash
    const apiKey = '2e0397b7-6cda-4806-8762-136d4a4591af'
