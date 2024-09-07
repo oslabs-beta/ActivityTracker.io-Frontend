@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+1. **Install npm package:**
+   ```bash
+   npm install os-analytics
+   ```
+2. **importing os-analytics:**
+   ```bash
+   import clickTracker from 'os-analytics';
+   ```
+3. **create a free account on os-analytics.com**
+  3.1 **you will receive an api key**
+4. **using click tracker:**
+  ```bash
+   const apiKey = '2e0397b7-6cda-4806-8762-136d4a4591af'
+   const website = 'test.com'
+   clickTracker(apiKey, website)
+   ```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**EXAMPLE USE CASE**
+```bash
+function App() {
+  import clickTracker from 'os-analytics';
 
-Currently, two official plugins are available:
+  const apiKey = '2e0397b7-6cda-4806-8762-136d4a4591af' //dummy data api key
+  const website = 'test.com'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  clickTracker(apiKey, website);
 
-## Expanding the ESLint configuration
+ return (
+    <div className="app">
+      <h1>OS Analytics Demo</h1>
+      <div className="button-row">
+        <HeatButton name="Button 1" />
+        <HeatButton name="Button 2" />
+        <HeatButton name="Button 3" />
+      </div>
+    </div>
+  );
+}
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+export default App;
 ```
