@@ -1,0 +1,30 @@
+{
+  "name": "os-analytics",
+  "version": "1.0.1",
+  "description": "OS analytics is a free, open source product designed to give developers the ability to collect and analyze user click data on their website(s). Please create a free account at https://os-analytics.com in order to receive an api key. Then, use our npm package with this api key. See our GitHub Repo for detailed instructions. Have fun collecting data!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oslabs-beta/os-analytics-npm.git"
+  },
+  "keywords": [
+    "OS",
+    "analytics",
+    "click",
+    "data",
+    "developer",
+    "tool",
+    "open-source",
+    "api"
+  ],
+  "author": "Peter Larcheveque, Eric DiMarzio, David Naymon, Saw Naing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oslabs-beta/os-analytics-npm/issues"
+  },
+  "homepage": "https://github.com/oslabs-beta/os-analytics-npm#readme"
+}
