@@ -14,8 +14,8 @@ const useClickTracker = (apiKey, website) => {
 
   const sendClickData = async (event) => {
     const clickData = {
-      x_coord: event.clientX,
-      y_coord: event.clientY,
+      x_coord: event.clientX / window.innerWidth,
+      y_coord: event.clientY / window.innerHeight,
       websiteName: website,
       element: event.target.tagName.toLowerCase(),
       elementName: event.target.innerHTML.toLowerCase(),

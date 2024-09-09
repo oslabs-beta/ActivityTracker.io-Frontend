@@ -1,7 +1,7 @@
 {
   "name": "os-analytics",
-  "version": "1.0.1",
-  "description": "OS analytics is a free, open source product designed to give developers the ability to collect and analyze user click data on their website(s). Please create a free account at https://os-analytics.com in order to receive an api key. Then, use our npm package with this api key. See our GitHub Repo for detailed instructions. Have fun collecting data!",
+  "version": "1.0.2",
+  "description": "Track Website Click Interactions",
   "main": "index.js",
   "type": "module",
   "scripts": {
