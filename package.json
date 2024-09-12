@@ -1,6 +1,6 @@
 {
   "name": "os-analytics",
-  "version": "1.0.2",
+  "version": "1.0.6",
   "description": "Track Website Click Interactions",
   "main": "index.js",
   "type": "module",

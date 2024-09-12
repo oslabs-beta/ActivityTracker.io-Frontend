@@ -18,7 +18,6 @@ const useClickTracker = (apiKey, website) => {
       y_coord: event.clientY / window.innerHeight,
       websiteName: website,
       element: event.target.tagName.toLowerCase(),
-      elementName: event.target.innerHTML.toLowerCase(),
       activityId: event.target.dataset.activity,
       userAgent: navigator.userAgent,
       platform: navigator.platform,
@@ -26,7 +25,7 @@ const useClickTracker = (apiKey, website) => {
       created_at: new Date().toISOString(),
     };
 
-    const apiEndpoint = "http://localhost:8080/api/click-data";
+    const apiEndpoint = "http://ec2-54-193-194-208.us-west-1.compute.amazonaws.com:8080/api/click-data";
 
     try {
       const response = await fetch(apiEndpoint, {
@@ -55,7 +54,7 @@ const useClickTracker = (apiKey, website) => {
       referrer: document.referrer,
     };
 
-    const visitEndpoint = "http://localhost:8080/api/click-data/visits";
+    const visitEndpoint = "http://ec2-54-193-194-208.us-west-1.compute.amazonaws.com:8080/api/click-data/visits";
 
     try {
       const response = await fetch(visitEndpoint, {
